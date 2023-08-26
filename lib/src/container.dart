@@ -83,9 +83,11 @@ class SlideDrawerContainer extends StatelessWidget {
                     children: [
                       if (_hasHead) head!,
                       if (_hasContent)
-                        Container(
-                          margin: EdgeInsets.only(right: paddingRight),
-                          child: content,
+                        Expanded(
+                          child: Container(
+                            margin: EdgeInsets.only(right: paddingRight),
+                            child: content,
+                          ),
                         ),
                       if (!_hasContent && _hasItems)
                         for (MenuItem item in items)
