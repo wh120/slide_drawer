@@ -86,7 +86,7 @@ class SlideDrawerContainer extends StatelessWidget {
                         Expanded(
                           child: Container(
                             margin: EdgeInsets.only(right: paddingRight),
-                            child: content,
+                            child: content, 
                           ),
                         ),
                       if (!_hasContent && _hasItems)
